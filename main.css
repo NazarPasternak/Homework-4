@@ -1,0 +1,41 @@
+.box1 {
+    width: 500px;
+    color: #c6c02c;
+    background: #4c9bd0;
+}
+
+.box1 > img {
+    width: 100%
+}
+
+.box2 {
+    width: 500px;
+    color: #a52cc6;
+    background: #a2d04c;
+}
+
+.box2 > img {
+    width: 100%
+}
+
+.box3 {
+    width: 500px;
+    color: #2cc6b9;
+    background: #080b24;
+}
+
+.box3 > img {
+    width: 500px;
+    color: #2cc6b9;
+    background: yellow
+}
+.items {
+    color: blue;
+}
+ul > li {
+    width: 460px;
+    background: yellow;
+    color: blue;
+}
+
+
