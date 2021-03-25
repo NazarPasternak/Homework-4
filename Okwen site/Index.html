@@ -3,34 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Practice</title>
+
+    <link rel="stylesheet" href="style2.css">
 </head>
-
-
 <body>
-<div class="nav-content">
-    <div class="nav_logo">
-        <div src="" alt=""></div>
+<div class="nav_content">
+    <div class="wrapper"><!--gave additional class-->
+        <div class="align-items: center;"><!--logo content-->
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAU4AAABGCAMAAACUqY2CAAAAwFBMVEX///8Apej2ihR90fMIqOn5/f4Nquk8uu3b8vyD0/Qns+zJ7Pq15fjv+f5Rwu/82LEzt+36vHj5rVv7xo3i9fyT2fX++PH3lSrp9/1myfEcr+v3mTL0+/795Mr+8eLS7/un4PfC6flJv++t4vhvzPL2kCD7zJn96tX83br4qFGa2/b806f5t2/6wIH/8ur4oUP4nz75s2f6p13+3sn7rGv6oFD91rv907P5nEX6r2/8zKj8xJj8wpH7u4f7yZL3nTqVuXVWAAAOF0lEQVR4nO1caWObxhZF7CCBSQwyYFksQnGMYztb0740jf//v+rcOzNsM4OlLPVrqvOhkVlnztx9LtW0E0444YQT/gHcv//w3EP4lfBR/+25h/AL4YOuf3ruMfw7ESzbJqydOmySKrXosfUf+sfnHdW/E1UW2Ysetp+tgNHrC3373EP71yH1nIWIyIiJJzqp+pFIvRzYM53MaKuiKKrSyxwTZdRwn3twPwLWZvPPvazygTnfK0ZH4ySCw3k7c+fG8zxrcsxKPI+tget54t07w6j4K8jtAV5odPdMHmWs8FfrCWBn4HU9kpU7HY+2NBw/96OsjQcHX58DzuDn9bkUt5q2kg6LTNoo1ZRkwFpd8WFsupW0liGeSpX3xkSkg8mxgIj1jv7ckbu96T31YmHwiZLzONyAaEcmPh7OU+ojiSmiN1j5+KjpG6MRVf2ttrPrDr/RATfw81aX4lHTCjB4wqgacnSpYqSA1zkr9lfiRLCSTmhQeqsa5LZS3RzbC1ugkzg09rgVTGI1OR+O6DTp6rdksqIckIUO6S+ZZWd0+sIJf/DKhNqsnHnZmvPwAil7CT8VdD6QU+WiHywHTCpREVLA4jYgj25CbjQGfigpgFGPDMSeUsJxCJ35hCYpnakpjltzyZNK+pPQWScT0EUGOkODI6thPmY3XhhBbiwDKyiSGii1mcYfRieo0mJsA1O/W2MRS/KKHF6eNuYit1C9euXAqRb+cHxjHELnIhpbMymdIIiCWpG1zYOOTsFqUACdQ+0JPLMnLSXkOp2tckHa2WAOpBPIi0ZuLOufLqAgU49gQi1aoEKzooVTLFdJ5lMxD8jbAzIXU67vT9MJEjFeTDmdbm9xh0RxrXIkwttfNV7syuxe6U3mvgr5aJ+m8y2fwmghQf0n4+wQE7vpkNcF6HLsJgWJyHExNpVHltVyHDLdgIi8XUgf8CSdTjJ1R3I6UZ3HDyIjN+P+7MF0glTbKX9XI79tQOf9FcXrPR47Z39edw8byBL4TKWqh9RTAKsLO8OJEQZ2vXIS1+wT450C7VPaAE/TGeFLhrKtoLMUlMgZjPwoOkHSC/4uRZw3oLPDBR57PZmOPzBXFnmgrwp0EvQUhQuKHuH7010I6WWUlXRmEEPZhE+4RLbMh9C5IWuRD4hS0Amx0IgxQorZqcRRdPbmNFTeJqFzTek8m1wJ7oTPvZ1TdbAxZKpgJjPQ8Kruk3Yao1kG80iV3HweQic66LqXeBWdoKLDZ42c01F0bnJOZ9Y7swkOpxPiTJPGVzAThfHAd9VaiwzCNUVIicx5jBbCMzyQ3BQvdsRHHEQnRvP9KFR0uvaIF3hMr6hH0Vl0yg6OI5TyeQSdoF5Uw+sZVV9S0kMWEO+ARD8r3WCTFkmI4RtMx6DnN+KotUPpxGeU/LyKTpCCgTMqRxHWfKA0GVjTyaQF4X9USgKbI+jEUAHEIZlLhzKcFsiEY1GrkCf9+CEOpfPOqL1IhABSO5hOWNaONyWd1dBnkYhtmHsQWpp4BC4l8kCJvyHGANAOW3cyzGPoRBVdwWRVKkItvYvLl6dUK7KxHLsRDXHAEkVUPIVg6VA6wT3m7PFKOoGzLnFfjR09hL62OQQX5GkYb0Fa2S98ykyYmdftcH5H0Qks+akjtXcMBo59SRNQSI4aOoT7T79/uKcjqWkcBZFsi0skrM2hdGqV3SUkajp3A8fRjI2+mLNzNwV0eiuGXdJEXZjCsMq4g82zXlWPohNDr4gGOQrUGIaEuJIWl4v15/cQy+4/Ysk4YKLr4OCJgRe85MF0ojGhLKrphBjZ6x480gUYiTMCJ1ssgZjhxF3EbegwSj2eMB5HJ40p1ZUPiJJ8ynqLF/tw8P6PLsX6uNaoi/SQFZi1Izqjw+nEshaGbGo6QQF8+suYWOp5VzTkMs+k+RuJqJFRbk2OpBM9di09gygx5WjRQnFrfn0xSFn/AD4TFE+LRtiJuDypzdO50TEZnaABWFOZoRNu7eqbo3B5PlCqmwzQ+KpkGBFjUFjSP46lEyRLrergr1teUKwo8feXoxIAbK6DpHkoWRFWm6YlXlDP6fjd/sVDOrWYFWdm6IRzIbvRH4UR83RyVwQVnRkRwuSODehYOmNT4olH4ytwKDtOrfa/SUnls8ZTkxKnTTRbqKFNpUijPjntfg7uWJHJZtYsnRU7UE/ZOzCMl5V7h2i7zOtYOl17lk4fKke0VkAiIYhJ7vcTOi/XOD/if2BpVnjdVLNDUWLbnsMxneiOklk6gcdEZkMOzYqySb1lgtTkL/zBdNpg9Cs0nQWNp/7Up/hEtZ1KcQtLIDyxr4V1GMx8QqeVQeafzdFZ4vIZwiIdSidaaFV1F6fzc+hsMo8WxVKYNAz+vUDnnxo3Bw4KTZJl0/0cV9iUKAfyMaGTFpeiOToh3t8FtiBiB+fssFlTd+XzMhsncssusv3BdCJafPqORsy/CXR+oYMtuQ7K0AzTcT4d/seUTpbzzdAJ4UNWig7l8BLI0HyS5KEecRB+sys6ik6Qzm+jEwnqz0H20yubQCcWl2bpJGbazscrBDiiBNIsugMQLNpeFxhbxrcHSk/QmYUGTo4qOwjDR4HOzzRhX3Fl98JQ3LxdQqkkMpZpEBQt5IJm7+pFOulW6QydSIGYfsl2MlnbwpROKC6wcvUG35aHpRtYGxfbMHh9/2e4IjodYv9gf+h3gc4PvFCyofLisyaDMWgPSbeVnQ/mJqET3NEsnRAvi5Io22enBkGsKGGRjJlP7BOAXMnPccM9k2y9cXwPnREEYJAZL/mA1pcTNiGOh7Rog90QK4jZpaXttKsxQClsSM+uSxp7gLMRukDGI1McVNCZC7kvJNgN90EtbbaiS90v06ALhGO9n6Nz8VQYv8RRtmhtwHh+EYUTmHbQxpoxSKqiQJWWYWTbth8m4xjFNQxx5yse9CgZhics0K6uxQ2E1hBR4hkrMYS2NLi6H0nchlGe51G2G2yYD3qUOrzCY9fSKQae56mbi4BCDy2ZQ2tFcOnYev6l0Ypuy3c2qpmNEs0KgkCoLv//YBP83BY66n+INkKZjm3Brt9P2AwiTLPBdLbI/Vw33X8aYAg3WMKhFTiaev/Fa0qXkLCjG25ppkvrSjP5238cIVpwgxaIQ77ve//nbxf7i/efoTqHJh32kXyU5Eq2WXQCQ4L2EBxWQzub7JKeWK/X9AfIJsQxCU0bm7lq9H8eKd3bh4Yw8s8S+xKHHhJbZaFzzqVFREh/fonG7p8EA/0PFIAhh0A+bWNJ45a4wpZkEFjcMCpQOJW9Tid0LYBQMoB2rpgmHrmTZSH7IiZa0iYnMKCuLSYwJwzh0R0EKBlAS6nVjrvMTdz1o0lanTpK4YyXhbwNiMLiAd8mlToya8Oh8HP9BYo3bPor5RdwZ6CttekP4UqG2fPyc6y/fwPyF4FfT70+IXMw1XCBTQe68MZdcD1KrHqE6l0pg4UDVd5I+UpMkk/luW2biuUyyDmAqdgFinOeXGSKJ5xf0g/Nri5ZFvTuQX7h64s9xaWcsu0jXnD54kp2tqK959ANy2MgF74iJCxjemqV2KoY4JaB3K03C6csKiNXtulpWU6/WTBruQwXSZJ4C6erEIkPsFkFSfGKuBtaKH5lgbjSb/HfryxH3+rn8gvP9LtXiFv5+a3+5pbgxf5C+iGgQUMgoIuMtUtJfbq1UKE1BRZgh1DynQo8gM7EcpS7ppTOpUq26O2qYiZ9wMydGuz157w5VlFSWO/f4b83ex0T8nP9Xn7h2RPfS25ZfYTQKjsNfgbCJC3JoNQTGUuUJGzoLqhrAgMKHxtEsvzf7UgOchVdSGdh13M5czC3/cjEW4l4kdS0/0lFp/YCabrWb/codjePiuvOdHn9g2PLxFx7vJGeBw9jMyVCjfbDxvBCqEXB7iX93qgiKu9LDWfS16wMVVAKbLi5QtMZnqBz7lagswxsbMdV0nmtvyL/vbvQHqDAucW/ZHhaOimdV6onBNgmB2PZ1EO3XoJPj1CTW8KrL+eq7gWngltkIGzEuT1fz5mn095hO5eqXhAvWvJ2eICSTu0BpOnhnfYK+LrbK3Sd0PnqNULhvLf6HZy9vZTqOmADOu0gW8umj5SgNwRdAzb0RYqt1qi3/a6q2pT5sW+rPRVils6GDUnhZ5BOEvS1c3SCtQTDt95/1TQ1GWe8nKbQ+S1vRVC4Ko19kmk3qIzBcudlYV1nHvOyG/yUeNqR1mEknQrGMtuP0tqc6e95UtkLhCqJQDq1kNgdNZ1b/at2fkFk7uam8ycSnOln1wildJ7j6duLl/ILABi+54ZYunc9/EJG7XWT3p8bpkKCG/Biga/sKQd8p+0EOoMo36jp1F6+1R5fkH9f7bXzvSpIP9h2kgtnrsK+WBKLl25v4jbxKsSYvp7ZITnIs2OXyHyg9J2evWVjmaHzVr/ewwdDhJBHpa4f7tmv9rPXdRt+Tua1Zes1Nd34W0Sqj1spPLbdEUSminUmXOVcaPkDpJPvLyiw3b+lmc67vS5NaRCHxp3a3Yx0fobK+9APcdhZ9VS92Fj43mqX2bayTp/ZFrtSvTMyT+eCbbWpGif4g725ZsR3+h3+e6tfKHWd0Pnm/A5wLvf9W/2GnD9/8ZY9THrNnv6PfdLSqHtKbaeRfT8iYAVNvX6jLjZ57AstK6yVFwXRTGHai3yKWr62acSdYCbN3CiuLqkeby8VCSbg9cMlxaNcSrcPj3D27RulM4O2zotuLYJlmRA58MrlnOcYI4gPoR3wrFsjQlXp5+DT6f869SPxUX//3EP4lXD/5fQ/7DvhhBNOOOGfxN8VPPqqZ7YOvgAAAABJRU5ErkJggg=="
+                 alt=""></div>
+        <nav>
+            <div class="nav_item"><a href="#">Cources</a></div>
+            <div class="nav_item"><a href="#">Promotion</a></div>
+            <div class="nav_item"><a href="#">Review</a></div>
+            <div class="nav_item"><a href="#">Gallery</a></div>
+            <div class="nav_item"><a href="#">About Us</a></div>
+            <div class="nav_item"><a href="#">Blogs</a></div>
+            <div class="nav_item"><a href="#">Contacts</a></div><!--7 buttons content-->
+        </nav>
+        <div class="nav_button"><!--navigation button at end-->
+            <button>Request back call</button>
+
+        </div>
     </div>
-
-    <nav>
-        <div class="nav_item"><a href="#">Cources</a></div>
-        <div class="nav_item"><a href="#">Promotion</a></div>
-        <div class="nav_item"><a href="#">Reviews</a></div>
-        <div class="nav_item"><a href="#">Gallery</a></div>
-        <div class="nav_item"><a href="#">About us</a></div>
-        <div class="nav_item"><a href="#">Blogs</a></div>
-        <div class="nav_item"><a href="#">Contacts</a></div>
-        
-
-
-
-        
-    </nav>
-
-
-
 </div>
+</div>
+<div class="first-screen">
+    <div class="first-screen_left">
+        <h3>Школа програмування OktenWeb</h3>
+        <h1>Отримай IT-Професію <br>
+            <span>With 100% guaranty</span> <br> find working place</h1>
+        <div class="first-screen_text">
+            <p>65.3% percents of the Ukraine population devastate to spent their life, don't even achieve a medium-class
+                life. Office employees, managers, waiters, or truck drivers. Do you agree to stay lower work class?
+            </p>
+            <button>
+                Pass the test for IT-proficiency
+            </button>
+        </div>
 
+    </div>
+    <div class="first-screen_right"></div>
+</div>
 
 </body>
 </html>

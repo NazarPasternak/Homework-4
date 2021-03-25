@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav_content{/*my father that gives comand s to kids*/
+    background-color: #F9F9F9;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3298F2;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    column-gap: 35px;
+    flex-grow: 1;
+    margin-left: 12px;
+
+}
+.nav_item a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #292929;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.nav_button{
+    width: 309px;
+}
+.first-screen {
+    padding: 93px 93px 93px 245px;
+}
+
+.nav_button button{
+    width: 100%;
+    height: 60px;
+    border: 2px solid #3298F2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #3298F2
+}
+
+.first-screen_left{
+    width: 45%;
+}
+.first-screen_left h3 {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #ff963B;
+}
+.first-screen h1 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #292929;
+}
+.first-screen h1 span {
+    color: #3298F2;
+}
+.first-screen_text{
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.first-screen_text p:first-child{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.first-screen_left button{
+    width: 382px;
+    height: 61px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #292929;
+    background: #ff963B;
+    border-radius: 5px;
+    border: none;
+}
